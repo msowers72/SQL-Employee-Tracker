@@ -10,8 +10,10 @@ const db = mysql.createConnection(
     password: 'root',
     database: 'tracker_db'
   },
-  console.log(`Connected to the tracker_db database.`)    
+  console.log(`Connected to the tracker_db database.`)
 );
+
+
 
 goPrompt();
 
@@ -41,19 +43,40 @@ function goPrompt() {
       case "Check Employees":
         viewEmployees()
         break;
+        case "Update Employee":
+        plusEmployees()
+        break;
+        case "Plus Department":
+        plusDepartment()
+        break;
       case "Plus Employee":
-        viewEmployee()
+        plusEmployee()
         break;
       case "Plus Role":
-        viewRole()
+        plusRole()
         break;
     }
   })
 }
 
-function getInfo() {
-db.query('SELECT * FROM department', function (err, results) {
-  console.log(results);
-});
-
+function viewDepartments() {
+  db.query('SELECT * FROM department', function (err, results) {
+    console.table(results);
+    goPrompt();
+  });
 }
+
+function viewRoles() {
+  db.query('SELECT * FROM role', function (err, results) {
+    console.table(results);
+    goPrompt();
+  });
+}
+
+function viewEmployees() {
+  db.query('SELECT * FROM employee', function (err, results) {
+    console.table(results);
+    goPrompt();
+  });
+}
+
