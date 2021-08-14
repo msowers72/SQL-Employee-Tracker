@@ -43,7 +43,7 @@ function goPrompt() {
       case "Check Employees":
         viewEmployees()
         break;
-        case "Update Employee":
+        case "Plus Employee":
         plusEmployees()
         break;
         case "Plus Department":
@@ -86,22 +86,3 @@ function viewEmployees() {
 
 
 
-// function plusDepartment(){
-//   db.query('SELECT role.title AS selectedTitle, role.salary, AS selectedTitle')
-// }
-
-
-
-
-// function plusEmployee() {
-//   db.query(`UPDATE Employee SET review = ? WHERE id = ?`,function(err, results){
-//     console.table(results);
-//       goPrompt();
-//   })
-//     inquirer.prompt([]{
-//       type: "list",
-//       message: "Select Employee to Update",
-//       name: "updateEmployee",
-
-//     })
-// }
