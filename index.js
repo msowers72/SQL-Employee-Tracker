@@ -136,7 +136,7 @@ function selectRole() {
   return allStaff;
 }
 
-
+// function selectManager
 function selectManager() {
   db.query('SELECT first_name FROM employee WHERE manager_id IS NULL', function (err, res) {
     for (var i = 0; i < res.length; i++) {
