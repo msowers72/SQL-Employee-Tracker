@@ -146,6 +146,7 @@ function selectManager() {
   return theManagers;
 }
 
+// add department function
 function plusDepartment() {
   {
     inquirer.prompt([
