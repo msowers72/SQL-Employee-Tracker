@@ -16,13 +16,17 @@
 <msowers72@yahoo.com>
 
 ## Objective
-Create an application that allows non-developers to easily view and interact with information stored in databases. The interfaces are refered to as Content Managemtn Systems(CMS.)
+Create an application that allows non-developers to easily view and interact with information stored in databases. The interfaces are refered to as Content ManagementSystems(CMS.)
 
 ## Description:
-There are many demands on todays busniness owner. For example, the owner of a business needs to track; pricing,
-competitiveness, expansion, marketing, inventory, financing and salaries. This note taker application will aid 
-a business owner in all of these task. The application uses and express backend to save and retrieve note data from a
-JSON file.
+This application is user friendly and has a varirty of built in features:
+* Intutitive Indexing
+* Search and Retrieval Features
+* Secarch by Name
+* Search by Title
+* Search by Salary
+* Search by Department ID
+* Add employee functionality
  
 ## Technologies
 * JavaScript
