@@ -1,12 +1,12 @@
 # SQL-Employee-Tracker
 
 # Table of Contents
-- [username](#username)
-- [email](#email)
-- [objective](#objective)
-- [description](#description)
-- [technologies](#technologies)
-- [licenses](#licenses)
+- [Username](#username)
+- [Email](#email)
+- [Objective](#objective)
+- [Description](#description)
+- [Technologies](#technologies)
+- [Licenses](#licenses)
 
 
 ## GitHub Username
@@ -35,9 +35,6 @@ JSON file.
 ## Licenses 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Licenses 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<!-- ![Tux, the Linux mascot](https://img.shields.io/badge/License-MIT-green) -->
 
 ## Video
 <iframe src="https://drive.google.com/file/d/118vAwl5QHs55dZqSwfbOngAz7D9HiZS7/view?usp=sharing" width="640" height="480"></iframe>
