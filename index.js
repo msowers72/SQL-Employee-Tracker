@@ -203,6 +203,7 @@ function plusRole()
   })
 }
 
+// updated add employee funciton
 function plusEmployees()
 {
   db.query('SELECT * FROM employee JOIN role ON employee.role_id = role.id;',function (err,res)
