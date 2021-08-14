@@ -19,7 +19,7 @@ const db = mysql.createConnection(
 
 
 
-
+// funciton that fires my array
 
 function goPrompt() {
   inquirer.prompt([
@@ -244,6 +244,5 @@ function plusEmployees()
   });
 }
 
-
-
+// fires my array
 goPrompt();
