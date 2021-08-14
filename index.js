@@ -59,6 +59,7 @@ function goPrompt() {
   })
 }
 
+// Function is to view departsments
 function viewDepartments() {
   db.query('SELECT * FROM department', function (err, results) {
     console.table(results);
@@ -66,6 +67,7 @@ function viewDepartments() {
   });
 }
 
+// Function is to view rolls
 function viewRoles() {
   db.query('SELECT * FROM role', function (err, results) {
     console.table(results);
@@ -73,6 +75,7 @@ function viewRoles() {
   });
 }
 
+// Function is to view employees
 function viewEmployees() {
   db.query('SELECT * FROM employee', function (err, results) {
     console.table(results);
@@ -80,9 +83,12 @@ function viewEmployees() {
   });
 }
 
-function plusDepartment(){
-  db.query('SELECT role.title AS selectedTitle, role.salary, AS')
-}
+
+
+
+// function plusDepartment(){
+//   db.query('SELECT role.title AS selectedTitle, role.salary, AS selectedTitle')
+// }
 
 
 
