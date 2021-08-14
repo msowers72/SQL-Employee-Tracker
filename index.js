@@ -163,18 +163,16 @@ function plusDepartment() {
           {
             name: data.department,
           }, function (err) {
-          console.table(data)
-          goPrompt()
-        })
+            console.table(data)
+            goPrompt()
+          })
       })
   }
 }
 
 //  add role function
-function plusRole()
-{
-  db.query('SELECT role.title AS selectedTitle, role.salary AS selectedSalary FROM role',function (err,res)
-  {
+function plusRole() {
+  db.query('SELECT role.title AS selectedTitle, role.salary AS selectedSalary FROM role', function (err, res) {
     inquirer.prompt([
       {
         name: "selectedTitle",
@@ -186,15 +184,13 @@ function plusRole()
         type: "input",
         message: "What is the salary of this role?"
       }
-    ]).then(function (res)
-    {
+    ]).then(function (res) {
       db.query("INSERT INTO role SET ?",
         {
           title: res.selectedTitle,
           salary: res.selectedSalary,
         },
-        function (err)
-        {
+        function (err) {
           console.table(res)
           goPrompt()
         }
@@ -204,17 +200,14 @@ function plusRole()
 }
 
 // updated add employee funciton
-function plusEmployees()
-{
-  db.query('SELECT * FROM employee JOIN role ON employee.role_id = role.id;',function (err,res)
-  {
+function plusEmployees() {
+  db.query('SELECT * FROM employee JOIN role ON employee.role_id = role.id;', function (err, res) {
     inquirer.prompt([
       {
         type: "list",
         name: "updateId",
         message: "Select an employee to update: ",
-        choices: function ()
-        {
+        choices: function () {
           var allEmployees = []
           for (var i = 0; i < res.length; i++) {
             allEmployees.push(res[i].last_name)
@@ -228,15 +221,13 @@ function plusEmployees()
         message: "What is the Employee's new role?",
         choices: selectRole()
       },
-    ]).then(function (data)
-    {
+    ]).then(function (data) {
       var roleId = selectRole().indexOf(data.role) + 1
       db.query('UPDATE employee SET WHERE ?',
         {
           id: data.updateId,
           role_id: data.roleId
-        },function (err) 
-      {
+        }, function (err) {
         console.table(data)
         goPrompt()
       })
