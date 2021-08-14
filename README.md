@@ -16,7 +16,7 @@
 <msowers72@yahoo.com>
 
 ## Objective
-The application has three main functions. The application can write, save and delete notes.
+Create an application that allows non-developers to easily view and interact with information stored in databases. The interfaces are refered to as Content Managemtn Systems(CMS.)
 
 ## Description:
 There are many demands on todays busniness owner. For example, the owner of a business needs to track; pricing,
