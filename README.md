@@ -10,7 +10,7 @@
 
 
 ## GitHub Username
-[GitHub](https://github.com/msowers72/Team-Profile-Generator)
+[GitHub](https://github.com/msowers72/SQL-Employee-Tracker)
 
 ## Email
 <msowers72@yahoo.com>
@@ -26,8 +26,9 @@ JSON file.
  
 ## Technologies
 * JavaScript
-* HTML
-* CSS
+* MYSQL2 package
+* Inquirer package
+* Console.table package
 * Node.js
 * Express.js
 * npm modules
