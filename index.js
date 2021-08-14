@@ -170,6 +170,7 @@ function plusDepartment() {
   }
 }
 
+//  add role function
 function plusRole()
 {
   db.query('SELECT role.title AS selectedTitle, role.salary AS selectedSalary FROM role',function (err,res)
