@@ -16,7 +16,7 @@
 <msowers72@yahoo.com>
 
 ## Objective
-Create an application that allows non-developers to easily view and interact with information stored in databases. The interfaces are refered to as Content ManagementSystems(CMS.)
+Create an application that allows non-developers to easily view and interact with information stored in databases. The interfaces are refered to as Content Management Systems(CMS.)
 
 ## Description:
 This application is user friendly and has a varirty of built in features:
