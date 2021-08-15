@@ -78,7 +78,7 @@ function viewRoles() {
   });
 }
 
-// Function is to view employees
+// Function is to view employees in the form of a table in the command line
 function viewEmployees() {
   db.query('SELECT * FROM employee', function (err, results) {
     console.table(results);
@@ -86,6 +86,7 @@ function viewEmployees() {
   });
 }
 
+// Function allows you to add employees to your db and select the appropriate role
 function plusEmployees() {
   inquirer.prompt([
     {
@@ -111,6 +112,7 @@ function plusEmployees() {
       choices: selectManager()
     }
   ])
+  // promise function 
     .then(function (data) {
       var roleId = selectRole().indexOf(data.role) + 1
       var managerid = selectManager().indexOf(data.choice) + 1
@@ -127,8 +129,8 @@ function plusEmployees() {
         })
     })
 }
-// function for allstaff
 
+// function for allstaff and has a for loop
 function selectRole() {
   db.query('SELECT title FROM role', function (err, res) {
     for (var i = 0; i < res.length; i++) {
@@ -138,7 +140,7 @@ function selectRole() {
   return allStaff;
 }
 
-// function selectManager
+// function selectManager and has a for loop
 function selectManager() {
   db.query('SELECT first_name FROM employee WHERE manager_id IS NULL', function (err, res) {
     for (var i = 0; i < res.length; i++) {
