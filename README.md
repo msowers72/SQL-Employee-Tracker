@@ -1,4 +1,4 @@
-# SQL-Employee-Tracker
+# SQL-Employee-Tracker Content Management System (CMS)
 
 # Table of Contents
 - [Username](#username)

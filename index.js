@@ -241,7 +241,6 @@ function plusEmployees() {
   });
 }
 
-// fires my array
-
+// fires my goPrompt...
 
 goPrompt();
