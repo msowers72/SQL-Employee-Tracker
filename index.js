@@ -150,7 +150,7 @@ function selectManager() {
   return theManagers;
 }
 
-// add department function
+// add department function allows us to create a new function
 function plusDepartment() {
   {
     inquirer.prompt([
@@ -174,7 +174,7 @@ function plusDepartment() {
   }
 }
 
-//  add role function
+//  add role function allows you to update role and slect salary
 function plusRole() {
   db.query('SELECT role.title AS selectedTitle, role.salary AS selectedSalary FROM role', function (err, res) {
     inquirer.prompt([
@@ -188,6 +188,7 @@ function plusRole() {
         type: "input",
         message: "What is the salary of this role?"
       }
+      // promise 
     ]).then(function (res) {
       db.query("INSERT INTO role SET ?",
         {
@@ -203,7 +204,7 @@ function plusRole() {
   })
 }
 
-// updated add employee funciton
+//  add employee funciton and update the employee's role has a for loop
 function plusEmployees() {
   db.query('SELECT * FROM employee JOIN role ON employee.role_id = role.id;', function (err, res) {
     inquirer.prompt([
@@ -225,6 +226,7 @@ function plusEmployees() {
         message: "What is the Employee's new role?",
         choices: selectRole()
       },
+      // promise
     ]).then(function (data) {
       var roleId = selectRole().indexOf(data.role) + 1
       db.query('UPDATE employee SET WHERE ?',
