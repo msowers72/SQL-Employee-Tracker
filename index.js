@@ -7,7 +7,7 @@ const { allowedNodeEnvironmentFlags } = require('process');
 const allStaff = []
 const theManagers = []
 
-//data base
+//Allows you to connect to the tracker_db database
 const db = mysql.createConnection(
   {
     host: 'localhost',
@@ -20,7 +20,7 @@ const db = mysql.createConnection(
 
 
 
-// funciton that fires my array
+// funciton asking the user what functionality they would like to do question will display in the command line
 
 function goPrompt() {
   inquirer.prompt([
@@ -37,6 +37,7 @@ function goPrompt() {
         "Plus Department"
       ]
     }
+    // switch replaces else if...selects parameter and javascript will look for the correct function
   ]).then(function (data) {
     switch (data.choice) {
       case "Check Departments":
@@ -61,7 +62,7 @@ function goPrompt() {
   })
 }
 
-// Function is to view departsments
+// view departments in the form of a table in the command line
 function viewDepartments() {
   db.query('SELECT * FROM department', function (err, results) {
     console.table(results);
@@ -69,7 +70,7 @@ function viewDepartments() {
   });
 }
 
-// Function is to view rolls
+// Function is to view rolls in the form of a table in the command line
 function viewRoles() {
   db.query('SELECT * FROM role', function (err, results) {
     console.table(results);
@@ -237,4 +238,6 @@ function plusEmployees() {
 }
 
 // fires my array
+
+
 goPrompt();
