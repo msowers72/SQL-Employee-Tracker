@@ -42,7 +42,7 @@ This application is user friendly and has a varirty of built in features:
 
 
 ## Video
-<iframe src="https://drive.google.com/file/d/118vAwl5QHs55dZqSwfbOngAz7D9HiZS7/view?usp=sharing" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1EOqavdItohViQK9zbFUbkkZIkwCKcwsJ/view" width="640" height="480"></iframe>
   
  ![images](./assets/12-sql-homework-demo-01.png)
  ![images](./assets/12-sql-homework-video-thumbnail.png)

@@ -21,7 +21,6 @@ const db = mysql.createConnection(
 
 
 // funciton asking the user what functionality they would like to do question will display in the command line
-
 function goPrompt() {
   inquirer.prompt([
     {
